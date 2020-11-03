@@ -1,0 +1,19 @@
+#!/bin/bash
+cd /home/isa37/git/lab1/VHDL/sim/
+source /software/scripts/init_msim6.2g
+rm -r work
+vlib work
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/tb_output_data_checker.vhd
+vcom -93 -work ./work ../tb/tb_data_maker.vhd
+
+#Assuming Testbench file is tb_fir.v 
+#and testbench module is tb_fir
+#Compile the verilog type:
+vlog -work ./work ../netlist/myfir.v
+vlog -work ./work ../tb/TB_FILTER.v
+
+#link to Modelsim the compiled library of the cells
+#vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb_fir
+#link the delay file
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_fir/UUT=../netlist/myfir.sdf work.tb_fir

@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /home/isa37/git/lab1/VHDL/syn/
+rm -r work
+mkdir work
+mkdir analysis_results
+source /software/scripts/init_synopsys_64.18
+#lancia synopsis
+dc_shell-xg-t
+
