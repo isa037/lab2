@@ -3,24 +3,22 @@ cd /home/isa37/git/lab2/sim/
 source /software/scripts/init_msim6.2g
 rm -r work
 vlib work
-vcom -93 -work ./work ../src/pkg.vhd
-vcom -93 -work ./work ../src/ADDER.vhd
-vcom -93 -work ./work ../src/FF.vhd
-vcom -93 -work ./work ../src/MULTIPLIER.vhd
-vcom -93 -work ./work ../src/REG.vhd
-vcom -93 -work ./work ../src/ThreeMult012.vhd
-vcom -93 -work ./work ../src/ThreeMult123.vhd
-vcom -93 -work ./work ../src/sum_tree.vhd
-vcom -93 -work ./work ../src/control.vhd
-vcom -93 -work ./work ../src/my_fir.vhd
-vcom -93 -work ./work ../src/full_FIR.vhd
+vcom -93 -work ./work ../src/common/fpnormalize_fpnormalize.vhd
+vcom -93 -work ./work ../src/common/fpround_fpround.vhd
+vcom -93 -work ./work ../src/common/packfp_packfp.vhd
+vcom -93 -work ./work ../src/common/unpackfp_unpackfp.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_stage1_struct.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_stage2_struct.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_stage3_struct.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_stage4_struct.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_pipeline.vhd
 
 vcom -93 -work ./work ../tb/clk_gen.vhd
 vcom -93 -work ./work ../tb/tb_output_data_checker.vhd
-vcom -93 -work ./work ../tb/tb_data_maker.vhd
+vcom -93 -work ./work ../tb/data_maker.vhd
 
 
-vlog -work ./work ../tb/TB_FILTER.v
+vlog -work ./work ../tb/TB_MULT.v
 
-vsim work.tb_fir
+vsim work.tb_mult
 
