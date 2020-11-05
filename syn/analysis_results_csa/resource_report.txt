@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : resources
+Design : FPmul_REGISTERED
+Version: O-2018.06-SP4
+Date   : Thu Nov  5 15:20:41 2020
+****************************************
+
+Resource Sharing Report for design FPmul_REGISTERED in file
+        ../src/multiplier/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r119     | DW01_add     | width=8    |               | add_1_root_MULT/I2/add_126_2 |
+| r121     | DW02_mult    | A_width=32 |               | MULT/I2/mult_134     |
+|          |              | B_width=32 |               |                      |
+| r123     | DW01_inc     | width=25   |               | MULT/I3/I11/add_45   |
+| r125     | DW01_add     | width=8    |               | MULT/I3/I9/add_41_aco |
+| r127     | DW01_add     | width=8    |               | MULT/I4/I1/add_41_aco |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_1_root_MULT/I2/add_126_2          |                    |                |
+|                    | DW01_add         | rpl                |                |
+| MULT/I2/mult_134   | DW02_mult        | csa                | csa            |
+| MULT/I3/I11/add_45 | DW01_inc         | rpl                |                |
+===============================================================================
+
+1

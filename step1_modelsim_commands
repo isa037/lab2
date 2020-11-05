@@ -12,6 +12,8 @@ vcom -93 -work ./work ../src/multiplier/fpmul_stage2_struct.vhd
 vcom -93 -work ./work ../src/multiplier/fpmul_stage3_struct.vhd
 vcom -93 -work ./work ../src/multiplier/fpmul_stage4_struct.vhd
 vcom -93 -work ./work ../src/multiplier/fpmul_pipeline.vhd
+vcom -93 -work ./work ../src/multiplier/REG.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_pipeline_inputRegistered.vhd
 
 vcom -93 -work ./work ../tb/clk_gen.vhd
 vcom -93 -work ./work ../tb/tb_output_data_checker.vhd

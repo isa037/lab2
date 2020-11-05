@@ -18,10 +18,11 @@ module tb_mult ();
 		 .END_SIM(END_SIM_i));
 
 
-   FPmul UUT(.clk(CLK_i),
+   FPmul_REGISTERED UUT(.clk(CLK_i),
 		 .FP_Z(FP_Z_i),
 		 .FP_B(DATA_i),
-		 .FP_A(DATA_i));
+		 .FP_A(DATA_i),
+		 .RST_n(RST_n_i));
 
    tb_output_data_checker DS(.CLK(CLK_i),
 			     .RST_n(RST_n_i),

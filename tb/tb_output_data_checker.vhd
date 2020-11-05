@@ -49,7 +49,7 @@ variable input_int, correctOutputValue_int : integer;
       null;
     elsif CLK'event and CLK = '1' then  -- rising clock edge
       	wait_for_output := wait_for_output + 1;
-	if(wait_for_output > 5) then
+	if(wait_for_output > 6) then
 			--Write INPUT value readed from file
 			if not endfile(inputValues_fp) then
 				readline(inputValues_fp, line_in);
