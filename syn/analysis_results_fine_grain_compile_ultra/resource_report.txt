@@ -3,7 +3,7 @@
 Report : resources
 Design : FPmul_REGISTERED
 Version: O-2018.06-SP4
-Date   : Thu Nov  5 19:08:48 2020
+Date   : Thu Nov  5 19:38:36 2020
 ****************************************
 
 
