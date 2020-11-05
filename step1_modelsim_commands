@@ -3,6 +3,7 @@ cd /home/isa37/git/lab2/sim/
 source /software/scripts/init_msim6.2g
 rm -r work
 vlib work
+vcom -93 -work ./work ../src/multiplier/FF.vhd
 vcom -93 -work ./work ../src/common/fpnormalize_fpnormalize.vhd
 vcom -93 -work ./work ../src/common/fpround_fpround.vhd
 vcom -93 -work ./work ../src/common/packfp_packfp.vhd

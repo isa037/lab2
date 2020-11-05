@@ -21,9 +21,9 @@ ENTITY FPmul_stage2 IS
       B_SIG           : IN     std_logic_vector (31 DOWNTO 0);
       SIGN_out_stage1 : IN     std_logic;
       clk             : IN     std_logic;
-      isINF_stage1    : IN     std_logic;
-      isNaN_stage1    : IN     std_logic;
-      isZ_tab_stage1  : IN     std_logic;
+      isINF_stage1    : IN     std_logic;--
+      isNaN_stage1    : IN     std_logic;--
+      isZ_tab_stage1  : IN     std_logic;--
       EXP_in          : OUT    std_logic_vector (7 DOWNTO 0);
       EXP_neg_stage2  : OUT    std_logic;
       EXP_pos_stage2  : OUT    std_logic;
@@ -60,14 +60,29 @@ ARCHITECTURE struct OF FPmul_stage2 IS
 
    -- Architecture declarations
 
+   COMPONENT REGN_EN_FP IS
+	GENERIC ( N : INTEGER:=8);
+	PORT (R : IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+			ENABLE, CLOCK, RESETN : IN STD_LOGIC;
+			Q :	OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0));
+   END COMPONENT;
+
+   COMPONENT FFN_EN_FP IS
+	PORT (R : IN STD_LOGIC;
+			ENABLE, CLOCK, RESETN : IN STD_LOGIC;
+			Q :	OUT STD_LOGIC);
+   END COMPONENT;
+
    -- Internal signal declarations
    SIGNAL EXP_in_int  : std_logic_vector(7 DOWNTO 0);
    SIGNAL EXP_neg_int : std_logic;
    SIGNAL EXP_pos_int : std_logic;
    SIGNAL SIG_in_int  : std_logic_vector(27 DOWNTO 0);
    SIGNAL dout        : std_logic;
-   SIGNAL dout1       : std_logic_vector(7 DOWNTO 0);
-   SIGNAL prod        : std_logic_vector(63 DOWNTO 0);
+   SIGNAL dout1       : std_logic_vector(7 DOWNTO 0);--
+   SIGNAL prod, prod_tmp        : std_logic_vector(63 DOWNTO 0);
+   SIGNAL SIGN_out_stage1_int: std_logic;
+   SIGNAL middle_vector, middle_vector_int: std_logic_vector (12 downto 0);
 
 
 
@@ -79,7 +94,7 @@ BEGIN
 
    -- HDL Embedded Text Block 2 inv
    -- eb5 5
-   EXP_in_int <= (NOT dout1(7)) & dout1(6 DOWNTO 0);
+   EXP_in_int <= (NOT middle_vector_int(7)) & middle_vector_int(6 DOWNTO 0);
 
    -- HDL Embedded Text Block 3 latch
    -- eb2 2
@@ -89,28 +104,33 @@ BEGIN
       IF RISING_EDGE(clk) THEN
          EXP_in <= EXP_in_int;
          SIG_in <= SIG_in_int;
-         EXP_pos_stage2 <= EXP_pos_int;
-         EXP_neg_stage2 <= EXP_neg_int;
+         EXP_pos_stage2 <= middle_vector_int(9);
+         EXP_neg_stage2 <= middle_vector_int(8);
       END IF;
    END PROCESS;
+
+   --SIGN_out_stage1_FF
+   SIGN_stage1: FFN_EN_FP
+       port map(R=>SIGN_out_stage1,Q=>SIGN_out_stage1_int, ENABLE=>'1', RESETN=>'1', CLOCK=>clk);
+
 
    -- HDL Embedded Text Block 4 latch2
    -- latch2 4
    PROCESS(clk)
    BEGIN
       IF RISING_EDGE(clk) THEN
-         isINF_stage2 <= isINF_stage1;
-         isNaN_stage2 <= isNaN_stage1;
-         isZ_tab_stage2 <= isZ_tab_stage1;
-         SIGN_out_stage2 <= SIGN_out_stage1;
+         isINF_stage2 <= middle_vector_int(12);
+         isNaN_stage2 <= middle_vector_int(11);
+         isZ_tab_stage2 <= middle_vector_int(10);
+         SIGN_out_stage2 <= SIGN_out_stage1_int;
       END IF;
    END PROCESS;
 
    -- HDL Embedded Text Block 5 eb1
    -- exp_pos 5
-   EXP_pos_int <= A_EXP(7) AND B_EXP(7);
+   EXP_pos_int <= A_EXP(7) AND B_EXP(7);--
 --   EXP_neg_int <= NOT(A_EXP(7) OR B_EXP(7));
-   EXP_neg_int <= '1' WHEN ( (A_EXP(7)='0' AND NOT (A_EXP=X"7F")) AND (B_EXP(7)='0' AND NOT (B_EXP=X"7F")) ) ELSE '0';
+   EXP_neg_int <= '1' WHEN ( (A_EXP(7)='0' AND NOT (A_EXP=X"7F")) AND (B_EXP(7)='0' AND NOT (B_EXP=X"7F")) ) ELSE '0';--
 
 
    -- ModuleWare code(v1.1) for instance 'I4' of 'add'
@@ -132,11 +152,23 @@ BEGIN
    VARIABLE dtemp : unsigned(63 DOWNTO 0);
    BEGIN
       dtemp := (unsigned(A_SIG) * unsigned(B_SIG));
-      prod <= std_logic_vector(dtemp);
+      prod_tmp <= std_logic_vector(dtemp);
    END PROCESS I2combo;
+
+   --Multiplier output register
+   mult_out_reg: REGN_EN_FP
+       generic map (N=>64)
+       port map( R=>prod_tmp, Q=>prod, ENABLE=>'1', RESETN=>'1',  CLOCK=>clk );
 
    -- ModuleWare code(v1.1) for instance 'I6' of 'vdd'
    dout <= '1';
+
+   --Middle vector register
+   middle_vector<= isINF_stage1 & isNaN_stage1 & isZ_tab_stage1 & EXP_pos_int  & EXP_neg_int & dout1 ;
+
+   middle_vector_reg: REGN_EN_FP
+       generic map (N=>13)
+       port map(R=>middle_vector, Q=>middle_vector_int, ENABLE=>'1', RESETN=>'1', CLOCK=>clk); 
 
    -- Instance port mappings.
 

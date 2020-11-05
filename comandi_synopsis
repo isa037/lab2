@@ -7,6 +7,7 @@ source /software/scripts/init_synopsys_64.18
 #lancia synopsis
 dc_shell-xg-t
 #*******Reading VHDL source files**************
+analyze -f vhdl -lib WORK ../src/multiplier/FF.vhd
 analyze -f vhdl -lib WORK ../src/common/fpnormalize_fpnormalize.vhd
 analyze -f vhdl -lib WORK ../src/common/fpround_fpround.vhd
 analyze -f vhdl -lib WORK ../src/common/packfp_packfp.vhd
@@ -28,7 +29,7 @@ link
 
 #*******  Applying constraints   ***************
 #create 100 Mhz clock
-create_clock -name MY_CLK -period 1.56 clk  
+create_clock -name MY_CLK -period 1.41 clk  
 set_dont_touch_network MY_CLK
 
 #jitter simulation
@@ -45,10 +46,13 @@ set_load $OLOAD [all_outputs]
 #flatten the hiercarchy
 ungroup -all -flatten
 #implement the pparch multiplier
-set_implementation DW02_mult/pparch [find cell *mult*]
+#set_implementation DW02_mult/pparch [find cell *mult*]
 
 #*********    Start the syntesis    *************
-compile >  ./analysis_results/compilation_results.txt
+#compile >  ./analysis_results/compilation_results.txt
+
+#compile ultra
+compile_ultra >  ./analysis_results/ultra_compilation_results.txt
 
 #*********    Save the results      *************
 report_timing  >  ./analysis_results/timing_results.txt

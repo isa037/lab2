@@ -25,14 +25,18 @@
 # Loading work.fpmul(pipeline)#1
 # Loading work.fpmul_stage1(struct)
 # Loading work.unpackfp(unpackfp)
-# Loading work.fpmul_stage2(struct)
+# Loading work.fpmul_stage2(struct)#1
+# Loading work.ffn_en_fp(behavior)
+# Loading work.regn_en_fp(behavior)#2
+# Loading work.regn_en_fp(behavior)#3
 # Loading work.fpmul_stage3(struct)#1
 # Loading work.fpnormalize(fpnormalize)#1
 # Loading work.fpround(fpround)#1
 # Loading work.fpmul_stage4(struct)
 # Loading work.packfp(packfp)
 # Loading work.tb_output_data_checker(beh)
-run 5 us
+add wave *
+run 5us
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 0  Instance: /tb_mult/UUT/mult/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -60,11 +64,9 @@ run 5 us
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ns  Iteration: 1  Instance: /tb_mult/UUT/mult/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
+#    Time: 9 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 21 ns  Iteration: 3  Instance: /tb_mult/UUT/mult/i2
+#    Time: 9 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 21 ns  Iteration: 3  Instance: /tb_mult/UUT/mult/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -76,6 +78,8 @@ run 5 us
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 21 ns  Iteration: 3  Instance: /tb_mult/UUT/mult/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 27 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
+#    Time: 21 ns  Iteration: 3  Instance: /tb_mult/UUT/mult/i2
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 27 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
+#    Time: 33 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 33 ns  Iteration: 4  Instance: /tb_mult/UUT/mult/i3/i11

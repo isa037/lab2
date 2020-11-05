@@ -41,7 +41,7 @@ Presto compilation completed successfully.
 Information: Building the design 'FPmul_stage2'. (HDL-193)
 
 Inferred memory devices in process
-	in routine FPmul_stage2 line 87 in file
+	in routine FPmul_stage2 line 102 in file
 		'../src/multiplier/fpmul_stage2_struct.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -53,7 +53,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine FPmul_stage2 line 99 in file
+	in routine FPmul_stage2 line 119 in file
 		'../src/multiplier/fpmul_stage2_struct.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -102,6 +102,41 @@ Inferred memory devices in process
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'UnpackFP'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FFN_EN_FP'. (HDL-193)
+
+Inferred memory devices in process
+	in routine FFN_EN_FP line 13 in file
+		'../src/multiplier/FF.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'REGN_EN_FP' instantiated from design 'FPmul_stage2' with
+	the parameters "N=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine REGN_EN_FP_N64 line 14 in file
+		'../src/multiplier/REG.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'REGN_EN_FP' instantiated from design 'FPmul_stage2' with
+	the parameters "N=13". (HDL-193)
+
+Inferred memory devices in process
+	in routine REGN_EN_FP_N13 line 14 in file
+		'../src/multiplier/REG.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        Q_reg        | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'FPnormalize' instantiated from design 'FPmul_stage3' with
 	the parameters "SIG_width=28". (HDL-193)

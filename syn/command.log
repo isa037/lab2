@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Thu Nov  5 15:52:43 2020
+#@ # Date:   Thu Nov  5 18:56:15 2020
 #@ # Run by: isa37@localhost.localdomain
 #@ 
 
@@ -6639,6 +6639,7 @@ source /home/isa37/git/lab2/syn/.synopsys_dc.setup
 #@ # -- End source /home/isa37/git/lab2/syn/.synopsys_dc.setup
 
 #*******Reading VHDL source files**************
+analyze -f vhdl -lib WORK ../src/multiplier/FF.vhd
 analyze -f vhdl -lib WORK ../src/common/fpnormalize_fpnormalize.vhd
 analyze -f vhdl -lib WORK ../src/common/fpround_fpround.vhd
 analyze -f vhdl -lib WORK ../src/common/packfp_packfp.vhd
@@ -6659,7 +6660,7 @@ elaborate  FPmul_REGISTERED -arch registered_pipeline -lib WORK > ./elaborate.tx
 link
 #*******  Applying constraints   ***************
 #create 100 Mhz clock
-create_clock -name MY_CLK -period 1.56 clk
+create_clock -name MY_CLK -period 1.41 clk
 set_dont_touch_network MY_CLK
 #jitter simulation
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]
@@ -6672,10 +6673,12 @@ set_load $OLOAD [all_outputs]
 #flatten the hiercarchy
 ungroup -all -flatten
 #implement the pparch multiplier
-set_implementation DW02_mult/pparch [find cell *mult*]
+#set_implementation DW02_mult/pparch [find cell *mult*]
 #*********    Start the syntesis    *************
-compile >  ./analysis_results/compilation_results.txt
-#*********    Save the results      *************
+#compile >  ./analysis_results/compilation_results.txt
+#compile ultra
+compile_ultra >  ./analysis_results/ultra_compilation_results.txt
 report_timing  >  ./analysis_results/timing_results.txt
 report_area    >  ./analysis_results/area_results.txt
 report_resources > ./analysis_results/resource_report.txt
+quit
