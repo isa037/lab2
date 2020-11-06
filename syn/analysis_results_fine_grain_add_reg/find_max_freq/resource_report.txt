@@ -3,7 +3,7 @@
 Report : resources
 Design : FPmul_REGISTERED
 Version: O-2018.06-SP4
-Date   : Fri Nov  6 08:23:46 2020
+Date   : Thu Nov  5 17:31:38 2020
 ****************************************
 
 Resource Sharing Report for design FPmul_REGISTERED in file
@@ -27,11 +27,11 @@ Implementation Report
 |                    |                  | Current            | Set            |
 | Cell               | Module           | Implementation     | Implementation |
 ===============================================================================
+| MULT/I3/I11/add_45 | DW01_inc         | pparch (area,speed)                 |
 | MULT/I2/mult_154   | DW_mult_uns      | pparch (area,speed)                 |
-|                    |                  | mult_arch: benc_radix8              |
+|                    |                  | mult_arch: benc_radix4              |
 | add_1_root_MULT/I2/add_146_2          |                    |                |
 |                    | DW01_add         | rpl                |                |
-| MULT/I3/I11/add_45 | DW01_inc         | rpl                |                |
 ===============================================================================
 
 1

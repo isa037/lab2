@@ -29,7 +29,7 @@ link
 
 #*******  Applying constraints   ***************
 #create 100 Mhz clock
-create_clock -name MY_CLK -period 1.42 clk  
+create_clock -name MY_CLK -period 1.55 clk  
 set_dont_touch_network MY_CLK
 
 #jitter simulation
@@ -49,10 +49,10 @@ ungroup -all -flatten
 #set_implementation DW02_mult/pparch [find cell *mult*]
 
 #*********    Start the syntesis    *************
-#compile >  ./analysis_results/compilation_results.txt
+compile >  ./analysis_results/compilation_results.txt
 
 #compile ultra
-compile_ultra >  ./analysis_results/ultra_compilation_results.txt
+#compile_ultra >  ./analysis_results/ultra_compilation_results.txt
 
 #*********    Save the results      *************
 report_timing  >  ./analysis_results/timing_results.txt

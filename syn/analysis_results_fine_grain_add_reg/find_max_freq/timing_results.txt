@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul_REGISTERED
+Version: O-2018.06-SP4
+Date   : Thu Nov  5 17:31:36 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MULT/I1/A_SIG_reg[19]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: MULT/I2/mult_out_reg/Q_reg[46]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul_REGISTERED   5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MULT/I1/A_SIG_reg[19]/CK (DFF_X1)                       0.00       0.00 r
+  MULT/I1/A_SIG_reg[19]/Q (DFF_X1)                        0.09       0.09 r
+  MULT/I2/mult_154/a[19] (FPmul_REGISTERED_DW_mult_uns_1)
+                                                          0.00       0.09 r
+  MULT/I2/mult_154/U1649/Z (BUF_X1)                       0.04       0.13 r
+  MULT/I2/mult_154/U1760/Z (XOR2_X1)                      0.09       0.22 r
+  MULT/I2/mult_154/U1795/ZN (NAND2_X2)                    0.07       0.29 f
+  MULT/I2/mult_154/U2587/ZN (OAI22_X1)                    0.06       0.35 r
+  MULT/I2/mult_154/U602/S (FA_X1)                         0.12       0.47 f
+  MULT/I2/mult_154/U597/S (FA_X1)                         0.12       0.59 f
+  MULT/I2/mult_154/U595/CO (FA_X1)                        0.09       0.68 f
+  MULT/I2/mult_154/U584/S (FA_X1)                         0.13       0.82 r
+  MULT/I2/mult_154/U583/S (FA_X1)                         0.12       0.94 f
+  MULT/I2/mult_154/U2623/ZN (NAND2_X1)                    0.04       0.98 r
+  MULT/I2/mult_154/U2622/ZN (OAI21_X1)                    0.03       1.01 f
+  MULT/I2/mult_154/U2543/ZN (AOI21_X1)                    0.06       1.07 r
+  MULT/I2/mult_154/U2738/ZN (OAI21_X1)                    0.04       1.10 f
+  MULT/I2/mult_154/U2310/ZN (AOI21_X1)                    0.07       1.18 r
+  MULT/I2/mult_154/U1572/Z (BUF_X1)                       0.05       1.23 r
+  MULT/I2/mult_154/U2859/ZN (OAI21_X1)                    0.03       1.26 f
+  MULT/I2/mult_154/U2736/ZN (XNOR2_X1)                    0.05       1.31 f
+  MULT/I2/mult_154/product[46] (FPmul_REGISTERED_DW_mult_uns_1)
+                                                          0.00       1.31 f
+  MULT/I2/mult_out_reg/Q_reg[46]/D (DFF_X1)               0.01       1.32 f
+  data arrival time                                                  1.32
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  MULT/I2/mult_out_reg/Q_reg[46]/CK (DFF_X1)              0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.32
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.43
+
+
+1

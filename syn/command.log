@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP4 for linux64 -- Nov 27, 2018
-#@ # Date:   Thu Nov  5 19:34:16 2020
+#@ # Date:   Fri Nov  6 08:20:05 2020
 #@ # Run by: isa37@localhost.localdomain
 #@ 
 
@@ -6660,7 +6660,7 @@ elaborate  FPmul_REGISTERED -arch registered_pipeline -lib WORK > ./elaborate.tx
 link
 #*******  Applying constraints   ***************
 #create 100 Mhz clock
-create_clock -name MY_CLK -period 1.42 clk
+create_clock -name MY_CLK -period 1.55 clk
 set_dont_touch_network MY_CLK
 #jitter simulation
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]
@@ -6675,12 +6675,9 @@ ungroup -all -flatten
 #implement the pparch multiplier
 #set_implementation DW02_mult/pparch [find cell *mult*]
 #*********    Start the syntesis    *************
-#compile >  ./analysis_results/compilation_results.txt
-#compile ultra
-compile_ultra >  ./analysis_results/ultra_compilation_results.txt
-#*********    Save the results      *************
+compile >  ./analysis_results/compilation_results.txt
+report_timing
 report_timing  >  ./analysis_results/timing_results.txt
 report_area    >  ./analysis_results/area_results.txt
 report_resources > ./analysis_results/resource_report.txt
-#Finally, we can save the data required to complete the design and to per
 quit
