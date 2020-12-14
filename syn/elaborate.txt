@@ -41,7 +41,7 @@ Presto compilation completed successfully.
 Information: Building the design 'FPmul_stage2'. (HDL-193)
 
 Inferred memory devices in process
-	in routine FPmul_stage2 line 102 in file
+	in routine FPmul_stage2 line 112 in file
 		'../src/multiplier/fpmul_stage2_struct.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -53,7 +53,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine FPmul_stage2 line 119 in file
+	in routine FPmul_stage2 line 129 in file
 		'../src/multiplier/fpmul_stage2_struct.vhd'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -114,6 +114,8 @@ Inferred memory devices in process
 |        Q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
+Information: Building the design 'mbe'. (HDL-193)
+Presto compilation completed successfully.
 Information: Building the design 'REGN_EN_FP' instantiated from design 'FPmul_stage2' with
 	the parameters "N=64". (HDL-193)
 
@@ -145,5 +147,38 @@ Information: Building the design 'FPround' instantiated from design 'FPmul_stage
 	the parameters "SIG_width=28". (HDL-193)
 Presto compilation completed successfully.
 Information: Building the design 'PackFP'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ppg'. (HDL-193)
+Warning:  ../src/mbe/partial_product_generator.vhd:23: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 21 in file
+	'../src/mbe/partial_product_generator.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 's_padder'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_tree'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'rca63'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_stage1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DADDA_STAGE2'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_stage3'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_stage4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_stage5'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'dadda_stage6'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'HA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'FA'. (HDL-193)
 Presto compilation completed successfully.
 1

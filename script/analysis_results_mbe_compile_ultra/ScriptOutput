@@ -1,0 +1,32 @@
+Running first simulation... 
+mkdir: cannot create directory ‘analysis_results’: File exists
+data arrival time: 1.38
+clock uncertainty: -0.07
+library setup time: -0.04
+data arrival time: -1.38
+Slack is VIOLATED
+
+------------------------------------------------
+
+
+Running simulation with clock: 1.49
+mkdir: cannot create directory ‘analysis_results’: File exists
+data arrival time: 1.52
+clock uncertainty: -0.07
+library setup time: -0.04
+data arrival time: -1.52
+Slack is VIOLATED
+
+------------------------------------------------
+
+
+Running simulation with clock: 1.63
+mkdir: cannot create directory ‘analysis_results’: File exists
+data arrival time: 1.53
+clock uncertainty: -0.07
+library setup time: -0.03
+data arrival time: -1.53
+Slack is MET
+
+------------------------------------------------
+

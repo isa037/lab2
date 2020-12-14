@@ -13,6 +13,9 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
+library work;
+use work.my_pkg.all;
+
 ENTITY FPmul_stage2 IS
    PORT( 
       A_EXP           : IN     std_logic_vector (7 DOWNTO 0);
@@ -72,6 +75,13 @@ ARCHITECTURE struct OF FPmul_stage2 IS
 			ENABLE, CLOCK, RESETN : IN STD_LOGIC;
 			Q :	OUT STD_LOGIC);
    END COMPONENT;
+
+   component mbe is
+	port (  mbe_multiplier: in std_logic_vector(31 downto 0);
+			mbe_multiplicand: in std_logic_vector(31 downto 0);
+			mbe_out: out std_logic_vector (63 downto 0)
+	);
+   end component;
 
    -- Internal signal declarations
    SIGNAL EXP_in_int  : std_logic_vector(7 DOWNTO 0);
@@ -148,12 +158,16 @@ BEGIN
    END PROCESS I4combo;
 
    -- ModuleWare code(v1.1) for instance 'I2' of 'mult'
-   I2combo : PROCESS (A_SIG, B_SIG)
-   VARIABLE dtemp : unsigned(63 DOWNTO 0);
-   BEGIN
-      dtemp := (unsigned(A_SIG) * unsigned(B_SIG));
-      prod_tmp <= std_logic_vector(dtemp);
-   END PROCESS I2combo;
+--   I2combo : PROCESS (A_SIG, B_SIG)
+--   VARIABLE dtemp : unsigned(63 DOWNTO 0);
+--   BEGIN
+--      dtemp := (unsigned(A_SIG) * unsigned(B_SIG));
+--      prod_tmp <= std_logic_vector(dtemp);
+--   END PROCESS I2combo;
+
+   I2combo: mbe
+	port map (mbe_multiplier=>A_SIG, mbe_multiplicand=>B_SIG, mbe_out=>prod_tmp);
+	
 
    --Multiplier output register
    mult_out_reg: REGN_EN_FP

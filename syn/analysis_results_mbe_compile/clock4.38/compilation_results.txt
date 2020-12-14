@@ -1,0 +1,244 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.4 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.4 |     *     |
+============================================================================
+
+
+Information: There are 49 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPmul_REGISTERED'
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[63]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[62]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[61]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[60]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[59]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[58]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[57]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[56]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[55]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[54]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[53]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[52]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[51]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[50]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[49]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[48]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[19]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[18]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[17]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[16]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[15]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[14]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[13]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[12]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[11]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[10]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[9]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[8]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[7]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[6]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[5]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[4]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[3]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[2]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[2]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/SIG_in_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[21]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/SIG_in_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[20]' will be removed. (OPT-1207)
+Information: The register 'MULT/I1/B_SIG_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[31]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'FPmul_REGISTERED_DW01_add_0'
+  Processing 'FPmul_REGISTERED_DW01_add_1'
+  Processing 'FPmul_REGISTERED_DW01_inc_0'
+  Processing 'FPmul_REGISTERED_DW01_add_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:38    6218.3      2.94      30.4     700.4                          
+    0:01:38    6218.3      2.94      30.4     700.4                          
+    0:01:39    6220.4      2.94      30.4     659.3                          
+    0:02:22    6304.5      1.49       9.5       0.0                          
+    0:02:25    6303.9      1.52       9.8       0.0                          
+    0:02:25    6303.9      1.52       9.8       0.0                          
+    0:02:26    6301.3      1.50       9.6       0.0                          
+    0:02:27    6301.3      1.50       9.6       0.0                          
+    0:02:45    5084.3      1.49       9.6       0.0                          
+    0:02:49    5087.8      1.47       9.4       0.0                          
+    0:02:52    5087.8      1.45       9.2       0.0                          
+    0:02:54    5087.8      1.45       9.2       0.0                          
+    0:02:54    5087.8      1.45       9.2       0.0                          
+    0:02:55    5087.8      1.45       9.2       0.0                          
+    0:02:55    5087.8      1.45       9.2       0.0                          
+    0:02:55    5087.8      1.45       9.2       0.0                          
+    0:02:55    5087.8      1.45       9.2       0.0                          
+    0:02:55    5087.8      1.45       9.2       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:55    5087.8      1.45       9.2       0.0                          
+    0:02:58    5112.5      1.32       7.7      55.5 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:02:59    5112.5      1.31       7.6      55.5 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:04    5121.8      1.26       7.3      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:04    5122.1      1.26       7.3      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:09    5141.5      0.99       4.7      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:11    5146.0      0.96       4.6      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:12    5148.2      0.95       4.5      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:17    5146.8      0.88       3.9      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:20    5146.3      0.88       3.9      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:23    5145.8      0.85       3.6      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:25    5146.6      0.78       3.2      80.4 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:30    5164.1      0.76       3.1     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:33    5164.1      0.75       3.0     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:35    5169.4      0.74       3.0     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:38    5174.8      0.73       2.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:45    5178.2      0.73       2.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:47    5180.6      0.72       2.8     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:52    5184.3      0.62       2.2     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:55    5186.7      0.60       2.1     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:56    5186.7      0.59       2.0     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:03:58    5189.1      0.57       1.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:00    5189.1      0.57       1.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:04    5189.1      0.57       1.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:08    5189.1      0.56       1.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:11    5188.6      0.46       1.2     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:13    5193.9      0.42       1.1     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:15    5192.6      0.39       0.9     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:17    5194.7      0.35       0.8     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:19    5196.3      0.34       0.8     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:21    5205.9      0.32       0.7     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:24    5208.0      0.27       0.5     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:26    5209.3      0.26       0.5     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:29    5210.1      0.25       0.5     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:32    5215.5      0.23       0.4     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:34    5217.6      0.23       0.4     133.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:36    5235.9      0.22       0.4     187.6 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:38    5238.6      0.21       0.4     163.8 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:41    5237.8      0.21       0.3     163.8 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:45    5242.1      0.20       0.3     163.8 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:04:56    5242.1      0.20       0.3     163.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:05:16    5249.5      0.15       0.2     163.7 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:05:45    5253.5      0.10       0.1     164.5                          
+    0:05:50    5253.0      0.10       0.1     164.5                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:05:50    5253.0      0.10       0.1     164.5                          
+    0:05:54    5194.4      0.09       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:05:57    5194.4      0.09       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:05:58    5193.1      0.08       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:01    5193.1      0.08       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:07    5192.9      0.07       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:09    5193.9      0.07       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:11    5192.9      0.07       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:18    5193.9      0.06       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:20    5202.2      0.06       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:24    5202.2      0.06       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:33    5201.6      0.05       0.1       0.0                          
+    0:06:34    5202.4      0.05       0.1       0.0                          
+    0:06:36    5202.4      0.05       0.1       0.0                          
+    0:06:37    5202.4      0.05       0.1       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:06:37    5202.4      0.05       0.1       0.0                          
+    0:06:37    5202.4      0.05       0.1       0.0                          
+    0:06:41    5178.2      0.06       0.1       0.0                          
+    0:06:43    5170.2      0.06       0.1       0.0                          
+    0:06:44    5169.2      0.06       0.1       0.0                          
+    0:06:44    5169.2      0.06       0.1       0.0                          
+    0:06:44    5169.2      0.06       0.1       0.0                          
+    0:06:44    5169.2      0.06       0.1       0.0                          
+    0:06:47    5170.0      0.05       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:54    5170.2      0.05       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:06:57    5171.3      0.05       0.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:04    5170.2      0.05       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:09    5171.0      0.04       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:11    5172.9      0.04       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:18    5172.9      0.04       0.0       0.0                          
+    0:07:19    5159.3      0.04       0.0       0.0                          
+    0:07:19    5156.7      0.04       0.0       0.0                          
+    0:07:20    5156.7      0.04       0.0       0.0                          
+    0:07:20    5156.7      0.04       0.0       0.0                          
+    0:07:20    5156.7      0.04       0.0       0.0                          
+    0:07:20    5156.7      0.04       0.0       0.0                          
+    0:07:20    5156.7      0.04       0.0       0.0                          
+    0:07:26    5155.9      0.04       0.0       0.0                          
+    0:07:29    5151.1      0.04       0.0       0.0                          
+    0:07:38    5146.8      0.03       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:39    5147.4      0.03       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:40    5147.4      0.03       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:44    5149.0      0.03       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:46    5149.8      0.02       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:49    5149.8      0.02       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:53    5152.2      0.02       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:07:56    5152.7      0.02       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:08:00    5153.2      0.02       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:08:02    5152.7      0.01       0.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1

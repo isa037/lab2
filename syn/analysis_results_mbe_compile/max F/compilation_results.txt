@@ -1,0 +1,429 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.4 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.4 |     *     |
+============================================================================
+
+
+Information: There are 49 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FPmul_REGISTERED'
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[63]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[62]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[61]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[60]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[59]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[58]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[57]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[56]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[55]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[54]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[53]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[52]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[51]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[50]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[49]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[48]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[19]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[18]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[17]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[16]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[15]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[14]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[13]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[12]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[11]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[10]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[9]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[8]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[7]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[6]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[5]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[4]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[3]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[2]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[2]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I3/SIG_out_round_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/SIG_in_reg[1]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[21]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/SIG_in_reg[0]' will be removed. (OPT-1207)
+Information: The register 'MULT/I2/mult_out_reg/Q_reg[20]' will be removed. (OPT-1207)
+Information: The register 'MULT/I1/B_SIG_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/B_SIG_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'MULT/I1/A_SIG_reg[31]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'FPmul_REGISTERED_DW01_add_0'
+  Processing 'FPmul_REGISTERED_DW01_add_1'
+  Processing 'FPmul_REGISTERED_DW01_inc_0'
+  Processing 'FPmul_REGISTERED_DW01_add_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: compile falsified 388 infeasible paths. (OPT-1720)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
+  Mapping Optimization (Phase 15)
+  Mapping Optimization (Phase 16)
+  Mapping Optimization (Phase 17)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:30:39    6985.4      2.24     157.4       0.2                          
+    0:30:50    6976.1      2.26     158.9       0.2                          
+    0:30:50    6976.1      2.26     158.9       0.2                          
+    0:30:51    6974.5      2.26     158.8       0.2                          
+    0:30:52    6974.5      2.26     158.8       0.2                          
+    0:31:23    6678.7      2.19     152.5       0.2                          
+    0:31:31    6680.1      2.19     152.7       0.2                          
+    0:31:33    6680.9      2.18     152.3       0.2                          
+    0:31:34    6682.5      2.17     152.2       0.2                          
+    0:31:36    6684.3      2.17     151.9       0.2                          
+    0:31:38    6683.8      2.17     151.9       0.2                          
+    0:31:40    6683.8      2.17     151.9       0.2                          
+    0:31:41    6683.8      2.17     151.9       0.2                          
+    0:31:41    6683.8      2.17     151.9       0.2                          
+    0:31:41    6685.4      2.17     150.4       0.0                          
+    0:31:42    6685.4      2.17     150.4       0.0                          
+    0:31:42    6685.4      2.17     150.4       0.0                          
+    0:31:42    6685.4      2.17     150.4       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:31:42    6685.4      2.17     150.4       0.0                          
+    0:31:45    6687.8      2.16     150.2       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:31:48    6689.1      2.15     150.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:31:50    6693.4      2.14     150.1       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:31:54    6703.5      2.12     149.7       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:31:57    6710.4      2.12     149.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:32:00    6714.1      2.11     149.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:32:02    6714.4      2.10     149.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:32:04    6718.9      2.10     149.5       0.0 MULT/I2/mult_out_reg/Q_reg[41]/D
+    0:32:09    6722.6      2.09     149.2       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:11    6726.1      2.09     149.2       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:15    6729.8      2.08     149.1       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:18    6734.3      2.08     148.9       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:23    6736.2      2.07     148.8       0.0 MULT/I2/mult_out_reg/Q_reg[41]/D
+    0:32:26    6736.2      2.07     148.8       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:29    6739.4      2.07     148.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:32:32    6741.5      2.06     148.5       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:35    6739.6      2.05     148.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:32:40    6740.7      2.05     148.4       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:42    6743.6      2.05     148.3       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:46    6749.0      2.04     148.1       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:32:50    6751.6      2.03     148.1       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:52    6751.6      2.03     148.1       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:54    6755.6      2.03     148.0       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:32:57    6760.1      2.03     147.9       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:32:59    6758.5      2.03     147.9       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:33:01    6767.0      2.02     147.9       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:33:03    6766.2      2.02     147.8       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:33:06    6765.4      2.02     147.8       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:33:08    6768.9      2.02     147.7       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:33:11    6768.6      2.01     147.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:33:15    6771.0      2.00     147.6       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:33:17    6770.8      2.00     147.6       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:33:23    6772.1      2.00     147.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:25    6775.6      2.00     147.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:27    6777.7      2.00     147.5       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:30    6778.7      2.00     147.5       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:33:31    6778.5      2.00     147.4       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:34    6783.0      2.00     147.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:33:37    6783.0      1.99     147.4       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:39    6783.0      1.99     147.3       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:42    6781.9      1.99     147.3       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:33:45    6786.2      1.99     147.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:33:47    6793.4      1.99     147.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:33:50    6796.6      1.99     147.1       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:52    6800.8      1.98     147.0       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:33:55    6804.8      1.98     147.0       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:57    6810.1      1.98     147.0       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:33:59    6809.1      1.98     147.0       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:34:02    6810.4      1.98     146.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:05    6813.3      1.98     146.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:08    6813.6      1.98     146.8       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:34:11    6816.2      1.97     146.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:14    6820.2      1.97     146.7       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:34:17    6824.0      1.97     146.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:19    6825.6      1.97     146.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:34:21    6826.9      1.97     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:25    6831.9      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:28    6837.5      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:34:30    6841.8      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:33    6846.0      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:35    6848.2      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:38    6849.2      1.96     146.5       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:34:41    6854.6      1.96     146.4       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:34:42    6858.0      1.95     146.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:45    6866.5      1.95     146.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:47    6870.0      1.95     146.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:49    6868.9      1.95     146.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:54    6872.9      1.95     146.3       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:34:56    6875.0      1.95     146.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:34:59    6878.2      1.95     146.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:01    6883.3      1.95     146.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:04    6884.3      1.94     146.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:06    6883.5      1.94     146.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:09    6885.1      1.94     146.1       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:10    6887.3      1.94     145.8       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:13    6889.4      1.94     145.7       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:16    6892.1      1.94     145.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:19    6894.7      1.94     145.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:20    6896.8      1.94     145.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:22    6904.8      1.93     145.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:24    6907.2      1.93     145.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:25    6909.6      1.93     145.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:28    6911.5      1.93     145.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:30    6908.8      1.93     145.5       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:32    6912.5      1.93     145.5       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:35:35    6915.7      1.93     145.5       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:37    6919.7      1.93     145.4       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:35:40    6920.3      1.92     145.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:42    6924.2      1.92     145.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:47    6926.6      1.92     145.4       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:50    6927.7      1.92     145.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:54    6930.4      1.92     145.3       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:35:55    6930.6      1.92     145.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:57    6931.7      1.92     145.3       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:35:59    6933.8      1.92     145.3       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:36:03    6935.4      1.92     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:05    6936.2      1.92     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:07    6937.3      1.92     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:10    6939.4      1.91     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:36:12    6939.7      1.91     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:14    6940.5      1.91     145.2       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:17    6943.1      1.91     145.1       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:21    6946.9      1.91     145.1       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:23    6947.7      1.91     145.1       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:25    6948.5      1.91     145.1       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:36:27    6947.9      1.91     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:31    6947.4      1.91     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:33    6949.8      1.91     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:36    6950.8      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:38    6950.8      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:40    6952.4      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:43    6951.9      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:46    6950.3      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:49    6954.6      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:53    6956.4      1.90     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:36:57    6957.5      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:00    6957.8      1.90     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:03    6963.9      1.90     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:06    6965.2      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:09    6968.4      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:12    6968.9      1.89     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:14    6968.9      1.89     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:37:16    6969.5      1.89     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:18    6972.1      1.89     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:19    6971.9      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:21    6973.2      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:23    6978.0      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:37:26    6979.0      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:30    6979.0      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:32    6980.4      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:37:36    6982.2      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:37:39    6985.2      1.89     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:37:45    6985.7      1.89     145.0       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:37:50    6990.7      1.88     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:37:53    6990.7      1.88     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:37:56    6997.9      1.88     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:37:59    6999.3      1.88     144.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:02    7001.9      1.88     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:38:04    7006.7      1.88     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:07    7013.9      1.88     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:09    7018.1      1.88     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:12    7017.6      1.88     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:15    7021.9      1.87     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:18    7023.7      1.87     144.8       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:38:20    7029.3      1.87     144.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:23    7030.1      1.87     144.7       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:38:25    7030.9      1.87     144.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:28    7032.8      1.87     144.7       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:38:29    7035.2      1.87     144.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:32    7038.9      1.87     144.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:34    7042.1      1.87     144.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:38:37    7044.5      1.87     144.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:39    7047.1      1.87     144.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:42    7050.6      1.87     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[45]/D
+    0:38:44    7051.9      1.86     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:47    7055.6      1.86     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:50    7058.0      1.86     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:51    7057.5      1.86     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:38:54    7061.0      1.86     144.5       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:38:57    7063.4      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:00    7066.3      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:39:04    7068.7      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:39:07    7070.8      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:39:09    7071.6      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:39:12    7072.4      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:39:14    7072.9      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:16    7072.7      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:19    7076.7      1.86     144.4       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:22    7078.8      1.86     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:26    7081.7      1.86     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:39:28    7083.3      1.86     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:39:30    7087.0      1.86     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:33    7089.7      1.85     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[44]/D
+    0:39:35    7092.1      1.85     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:37    7095.3      1.85     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:39    7099.8      1.85     144.3       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:39:41    7103.5      1.85     144.2       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:43    7103.8      1.85     144.2       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:39:55    7103.8      1.85     144.2       0.0                          
+    0:40:07    7099.5      1.85     144.3       3.3                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:40:07    7099.5      1.85     144.3       3.3                          
+    0:40:14    7101.9      1.85     144.2       0.0                          
+    0:40:17    7100.9      1.85     144.2       0.0                          
+    0:40:20    7098.5      1.85     144.2       0.0                          
+    0:40:22    7097.9      1.85     144.2       0.0                          
+    0:40:24    7095.5      1.85     144.2       0.0                          
+    0:40:26    7097.9      1.85     144.2       0.0                          
+    0:40:28    7097.9      1.85     144.2       0.0                          
+    0:40:31    7097.1      1.85     144.2       0.0                          
+    0:40:34    7096.9      1.85     144.1       0.0                          
+    0:40:36    7097.9      1.85     144.1       0.0                          
+    0:40:39    7096.9      1.85     144.1       0.0                          
+    0:40:42    7095.0      1.85     144.1       0.0                          
+    0:40:44    7095.5      1.85     144.0       0.0                          
+    0:40:46    7096.3      1.85     144.0       0.0                          
+    0:40:48    7099.8      1.85     143.9       0.0                          
+    0:40:50    7100.6      1.85     143.9       0.0                          
+    0:40:53    7100.9      1.85     143.8       0.0                          
+    0:40:54    7100.9      1.85     143.8       0.0                          
+    0:40:57    7100.6      1.85     143.8       0.0                          
+    0:40:58    7100.9      1.85     143.7       0.0                          
+    0:40:59    7100.9      1.85     143.7       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:40:59    7100.9      1.85     143.7       0.0                          
+    0:40:59    7100.9      1.85     143.7       0.0                          
+    0:41:07    7046.6      1.85     143.4       0.0                          
+    0:41:09    7024.8      1.85     142.1       0.0                          
+    0:41:11    7015.2      1.85     142.0       0.0                          
+    0:41:12    7010.4      1.85     141.9       0.0                          
+    0:41:12    7009.6      1.85     141.9       0.0                          
+    0:41:12    7009.6      1.85     141.9       0.0                          
+    0:41:13    7009.6      1.85     141.9       0.0                          
+    0:41:14    6998.5      1.85     141.9       0.0                          
+    0:41:14    6996.9      1.85     141.9       0.0                          
+    0:41:15    6996.9      1.85     141.9       0.0                          
+    0:41:15    6996.9      1.85     141.9       0.0                          
+    0:41:15    6996.9      1.85     141.9       0.0                          
+    0:41:15    6996.9      1.85     141.9       0.0                          
+    0:41:15    6996.9      1.85     141.9       0.0                          
+    0:41:16    6997.7      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:41:18    7001.9      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:41:20    7002.7      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:41:21    7003.5      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:41:22    7005.1      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:41:26    7007.8      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:41:28    7009.9      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:41:30    7009.6      1.85     141.9       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:41:38    7009.4      1.85     141.9       0.0                          
+    0:41:41    6999.8      1.85     141.9       0.0                          
+    0:41:43    6997.9      1.85     141.9       0.0                          
+    0:41:46    6995.8      1.85     141.9       0.0                          
+    0:41:50    6995.8      1.85     141.8       0.0                          
+    0:41:52    6995.8      1.85     141.8       0.0                          
+    0:41:57    6996.6      1.85     141.8       0.0                          
+    0:41:59    6996.6      1.85     141.8       0.0                          
+    0:42:00    6996.9      1.85     141.8       0.0                          
+    0:42:02    6997.1      1.85     141.8       0.0                          
+    0:42:04    6996.6      1.85     141.8       0.0                          
+    0:42:07    6997.4      1.85     141.7       0.0                          
+    0:42:10    6996.6      1.85     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:11    6997.7      1.85     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:12    6997.7      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:15    6999.5      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:18    7000.3      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:23    7002.2      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:26    7004.3      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:28    7004.0      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:30    7007.8      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[47]/D
+    0:42:33    7012.3      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:35    7015.5      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:36    7015.0      1.84     141.7       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:37    7017.6      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:38    7018.9      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:40    7020.8      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:45    7020.0      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[46]/D
+    0:42:48    7020.5      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:50    7029.6      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:52    7031.2      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[42]/D
+    0:42:54    7034.4      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:42:56    7037.0      1.84     141.6       0.0 MULT/I2/mult_out_reg/Q_reg[43]/D
+    0:43:07    7042.3      1.84     141.6       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
